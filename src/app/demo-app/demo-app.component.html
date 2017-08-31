@@ -1,0 +1,17 @@
+<!--<h1>With ngIf and ngElse</h1>-->
+
+<div *ngIf="user | async; let user; else loading">
+    <p>{{user.year}}</p>
+</div>
+
+<div>
+  <!--<div *ngFor="let year of years">
+    <p>{{year.one}}</p>
+    <p>{{year.two}}</p>
+    <p>{{year.three}}</p>
+    <p>{{year.four}}</p>
+  </div>-->
+
+</div>
+
+<ng-template #loading>Loading User Data...</ng-template>
